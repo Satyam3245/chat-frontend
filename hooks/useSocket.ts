@@ -12,7 +12,7 @@ export const useSocket = () => {
   useEffect(() => {
     if (!user) return;
 
-    const SOCKET_URL = process.env.NEXT_PUBLIC_SOCKET_URL || 'http://localhost:5000';
+    const SOCKET_URL = 'https://chat-backend-3-jr4u.onrender.com';
     socketRef.current = io(SOCKET_URL, {
       withCredentials: true,
     });
